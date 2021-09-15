@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+dash = "*"
+dash-core-components = "*"
+dash-html-components = "*"
+dash-table = "*"
+jupyter-dash = "*"
+numpy = "*"
+pandas = "*"
+pyspark = "*"
+regex = "*"
+ssb-spark-tools = "*"
+toml = "*"
+wheel = "*"
+
+[dev-packages]
+black = "==21.8b0"  # need to pin the version because of prerelease
+isort = "*"
+nbstripout = "*"
+pytest = "*"
+pytest-cov = "*"
+
+[requires]
+python_version = "3.8"
