@@ -15,7 +15,8 @@ COPY Pipfile* /src/sfreg/
 
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir pipenv && \
-    pipenv install --dev
+    pipenv install --dev && \
+    pipenv --venv > ../environment-sfreg.txt
 
 WORKDIR /src
 RUN rm -rf sfreg
